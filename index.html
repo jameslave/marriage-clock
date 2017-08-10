@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title></title>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1">
+  <link rel="stylesheet"
+    href="//cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+  <link rel="stylesheet"
+    href="style.css">
+</head>
+
+<body>
+  <div id="container">
+    <div id="text">
+      <span id="duration"></span> days. &#128141;&#128158;
+    </div>
+  </div>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js"></script>
+  <script>
+    const now = moment();
+    const then = moment('2017-06-20');
+    const duration = Math.floor(moment.duration(now.diff(then)).asDays());
+    document.getElementById('duration').innerText = duration;
+  </script>
+</body>
+
+</html>

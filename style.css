@@ -1,0 +1,39 @@
+/* @import url('https://fonts.googleapis.com/css?family=Open+Sans:900'); */
+
+body {
+  background: linear-gradient(to bottom, rgba(0,0,0,0.1) 0%,rgba(0,0,0,0.5) 100%), url('./background.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+#container {
+  height: 100vh;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  font-family: -apple-system,system-ui,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif;
+  font-size: 100px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+#text {
+  background-color: rgba(0,0,0,0.5);
+  text-align: center;
+  width: 100%;
+  padding: 20px 0;
+}
+
+@media (max-width: 600px) {
+  #container {
+    width: 100vw;
+    font-size: 40px;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 1200px) {
+  #container {
+    width: 100vw;
+    font-size: 80px;
+  }
+}
