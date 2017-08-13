@@ -18,12 +18,11 @@
       <span id="duration"></span> days. &#128141;&#128158;
     </div>
   </div>
-  <script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js"></script>
   <script>
-    const now = moment();
-    const then = moment('2017-06-20');
-    const duration = Math.floor(moment.duration(now.diff(then)).asDays());
-    document.getElementById('duration').innerText = duration;
+    const now = new Date();
+    const then = new Date('2017-06-20');
+    const duration = Math.floor((now - then) / 86400000);
+    document.getElementById('duration').innerHTML = duration;
   </script>
 </body>
 
