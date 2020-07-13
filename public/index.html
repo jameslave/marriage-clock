@@ -15,7 +15,7 @@
 <body>
   <div id="container">
     <div id="text">
-      <span id="duration"></span> days. &#128141;&#128158;
+      <span id="duration"></span> days &#128141;&#128158;
     </div>
   </div>
   <script>
@@ -26,6 +26,7 @@
         .toString()
         .replace(/\B(?<!\.\d*)(?=(\d{3})+(?!\d))/g, ",");
       document.getElementById('duration').innerHTML = duration;
+      document.title = duration + ' days';
     }());
   </script>
 </body>
